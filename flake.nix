@@ -14,6 +14,14 @@
       // {
         devshell = devshell.templates.default;
         jupyenv = jupyenv.templates.default;
+        python-script = {
+          path = ./python-script;
+          description = "Python self-contained script template";
+        };
+        haskell-script = {
+          path = ./haskell-script;
+          description = "Haskell self-contained script template";
+        };
       };
     defaultTemplate = self.templates.trivial;
   };
