@@ -22,6 +22,10 @@
           path = ./haskell-script;
           description = "Haskell self-contained script template";
         };
+        cl-script = {
+          path = ./cl-script;
+          description = "Common lisp (sbcl) self-contained script template";
+        };
       };
     defaultTemplate = self.templates.trivial;
   };
