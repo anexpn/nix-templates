@@ -2,7 +2,7 @@
 #! nix-shell --pure
 #! nix-shell -p "python3.withPackages (ps: with ps; [])"
 #! nix-shell -i "python"
-#! nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz
+#! nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-22.11.tar.gz
 
 # Add packages to ...(ps: with ps; [ packages... ])...
 # Some useful packages:

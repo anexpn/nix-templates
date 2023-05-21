@@ -3,7 +3,7 @@
 #!nix-shell --pure
 #!nix-shell -p "sbcl"
 #!nix-shell -i "sbcl --script"
-#!nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz
+#!nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-22.11.tar.gz
 |#
 
 (write-line "Hello, world!")
