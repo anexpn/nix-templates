@@ -3,7 +3,7 @@
 #!nix-shell --pure
 #!nix-shell -p "sbcl"
 #!nix-shell -i "sbcl --script"
-#!nix-shell -I nixpkgs=https://github.com/NixOS/nixpkgs/archive/nixos-22.11.tar.gz
+#!nix-shell -I nixpkgs=https://nixos.org/channels/nixos-23.05/nixexprs.tar.xz
 |#
 
 ;;; Library
