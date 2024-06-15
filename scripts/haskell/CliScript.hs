@@ -2,7 +2,7 @@
 #! nix-shell --pure
 #! nix-shell -p "ghc.withPackages (ps: with ps; [optparse-applicative])"
 #! nix-shell -i runghc
-#! nix-shell -I nixpkgs=https://nixos.org/channels/nixos-23.05/nixexprs.tar.xz
+#! nix-shell -I nixpkgs=https://nixos.org/channels/nixos-24.05/nixexprs.tar.xz
 
 import Options.Applicative
 

@@ -3,7 +3,7 @@
 #! nix-shell --pure
 #! nix-shell -p "tinycc"
 #! nix-shell -i "tcc -run"
-#! nix-shell -I nixpkgs=https://nixos.org/channels/nixos-23.05/nixexprs.tar.xz
+#! nix-shell -I nixpkgs=https://nixos.org/channels/nixos-24.05/nixexprs.tar.xz
 */
 
 #include <stdio.h>
