@@ -50,9 +50,22 @@ extra-doc-files:    CHANGELOG.md
 common warnings
     ghc-options: -Wall
 
+common relude-mixins
+    build-depends:  base
+                  , relude
+
+    mixins:         base hiding (Prelude)
+                  , relude (Relude as Prelude)
+                  , relude
+
+common default-language
+    default-language: GHC2021
+
 library
     -- Import common warning flags.
     import:           warnings
+                    , relude-mixins
+                    , default-language
 
     -- Modules exported by the library.
     exposed-modules:  MyLib
@@ -70,11 +83,13 @@ library
     hs-source-dirs:   src
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    -- default-language: GHC2021
 
 executable example
     -- Import common warning flags.
     import:           warnings
+                    , relude-mixins
+                    , default-language
 
     -- .hs or .lhs file containing the Main module.
     main-is:          Main.hs
@@ -94,14 +109,16 @@ executable example
     hs-source-dirs:   app
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    -- default-language: GHC2021
 
 test-suite example-test
     -- Import common warning flags.
     import:           warnings
+                    , relude-mixins
+                    , default-language
 
     -- Base language which the package is written in.
-    default-language: GHC2021
+    -- default-language: GHC2021
 
     -- Modules included in this executable, other than Main.
     -- other-modules:
