@@ -22,6 +22,10 @@
           path = ./haskell-script;
           description = "Haskell self-contained script template";
         };
+        haskell-project = {
+          path = ./haskell-project;
+          description = "Haskell project template with sensible defaults";
+        };
         cl-script = {
           path = ./cl-script;
           description = "Common lisp (sbcl) self-contained script template";
