@@ -79,6 +79,9 @@ See [Beware "pretend" I/O](http://www.serpentine.com/criterion/tutorial.html#bew
 ## References
 
 [haskell-flake](https://flake.parts/options/haskell-flake)
+
 [haskell-template](https://srid.ca/haskell-template)
+
 [Hspec](https://hspec.github.io/)
+
 [Criterion](http://www.serpentine.com/criterion/tutorial.html)
