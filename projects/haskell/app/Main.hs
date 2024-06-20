@@ -1,8 +1,7 @@
 module Main where
 
-import qualified MyLib (someFunc)
+import qualified MyLib (strip)
 
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+  putStrLn $ MyLib.strip "\t Hello, Haskell! \n"

@@ -1,4 +1,6 @@
-module MyLib (someFunc) where
+module MyLib (strip) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import Data.Char
+
+strip :: String -> String
+strip = dropWhile isSpace . reverse . dropWhile isSpace . reverse
