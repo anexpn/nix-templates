@@ -11,11 +11,11 @@ lists available templates.
 ## Use Templates
 
 ```sh
-nix flake new -t github:juxtaly/nix-templates#<template-name> <dir>
+nix flake new -t github:anexpn/nix-templates#<template-name> <dir>
 
 # For example
 
-nix flake new -t github:juxtaly/nix-templates#haskell-project hs-project
+nix flake new -t github:anexpn/nix-templates#haskell-project hs-project
 ```
 
 Replace `nix flake new` with `nix flake init` to initialise in the current directory.

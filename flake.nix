@@ -40,6 +40,14 @@
           path = ./flakeonly/haskell;
           description = "Haskell flake.nix for non-flake projects";
         };
+        python-project = {
+          path = ./projects/python;
+          description = "Python project template with uv package manager";
+        };
+        python-flakeonly = {
+          path = ./flakeonly/python;
+          description = "Python flake.nix with uv for non-flake projects";
+        };
       };
   };
 }
